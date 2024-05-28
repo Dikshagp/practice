@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<style>
+/* Add some style to the page */
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+
+.container {
+width: 400px;
+margin: 100px auto;
+padding: 20px;
+border: 1px solid #ccc;
+background-color: #fff;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button {
+width: 100%;
+padding: 10px;
+border: none;
+background-color: #333;
+color: #fff;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+p {
+margin-top: 10px;
+text-align: center;
+}
+
+a {
+color: #333;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Login Page</h1>
+<!-- Create a form element to process the input -->
+<form action="action_page.php" method="post">
+<!-- Add a label and an input field for the username -->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username" required>
+<!-- Add a label and an input field for the password -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+<!-- Add a button to submit the form -->
+<button type="submit">Login</button>
+</form>
+<!-- Add some links for creating an account or resetting the password -->
+<p>Not registered? <a href="#">Create an account</a></p>
+<p>Forgot your password? <a href="#">Reset it here</a></p>
+</div>
+</body>
+</html>
